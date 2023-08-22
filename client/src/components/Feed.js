@@ -5,6 +5,7 @@ import Post from "./Post.js"
 import axios from '../utils/client.js';
 import { AuthContext } from '../context/AuthContext';
 
+
 export default function Feed({ username }) {
     const [posts, setPosts] = useState([]);
     //  const [text,setText] = useState("");

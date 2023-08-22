@@ -57,7 +57,7 @@ export default function Rightbar({ user }) {
                 <div className={styles.birthdayContainer}>
                     <img className={styles.birthdayImage} src={birthday} alt="" />
                     <span className={styles.birthdayText}>
-                        <b>Tristin</b> and <b>3 other friends</b> have a birthday today
+                        <b>Animesh</b> and <b>3 other friends</b> have a birthday today
                     </span>
                 </div>
 
