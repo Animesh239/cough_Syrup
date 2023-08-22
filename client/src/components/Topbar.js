@@ -1,6 +1,6 @@
 import React , { useContext } from 'react';
 import styles from "../styles/topbar.module.css";
-import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 import { Link } from "react-router-dom"
 import { AuthContext } from '../context/AuthContext';
 

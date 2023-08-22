@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import styles from "../styles/post.module.css";
-import { MoreVert } from "@material-ui/icons";
+import {MoreVert} from '@mui/icons-material';
 import axios from 'axios';
 import likeIcon from "../assets/likeIcon.png";   
 import heartIcon from "../assets/heartIcon.png"; 

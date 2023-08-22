@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "../../styles/Profile.module.css";
-import Sidebar from '../Sidebar.jsx';
-import Topbar from "../Topbar.jsx";
-import Feed from "../Feed.jsx";
-import Rightbar from "../Rightbar.jsx";
+import Sidebar from '../Sidebar.js';
+import Topbar from "../Topbar.js";
+import Feed from "../Feed.js";
+import Rightbar from "../Rightbar.js";
 import { useEffect, useState } from "react";
 import axios from '../../utils/client.js';
 import { useParams } from "react-router"

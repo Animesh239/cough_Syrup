@@ -5,7 +5,7 @@ import adOne from "../assets/advertisement.jpg";
 import { Users } from "../dummyData.js";
 import Online from "./Online.js";
 import { Link } from 'react-router-dom';
-import { Add, Remove } from "@material-ui/icons"
+import { Add, Remove } from "@mui/icons-material"
 import { AuthContext } from "../context/AuthContext";
 import axios from '../utils/client.js';
 

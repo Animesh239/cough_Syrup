@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/sidebar.module.css";
-import { RssFeed, Chat, Videocam, Group, Bookmark, HelpOutline, Work, Event, School } from "@material-ui/icons";
+import { RssFeed, Chat, Videocam, Group, Bookmark, HelpOutline, Work, Event, School } from "@mui/icons-material";
 import { Users } from "../dummyData.js";
 import CloseFriends from "./CloseFriend.js";
 

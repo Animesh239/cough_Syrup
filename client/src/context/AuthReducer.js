@@ -12,12 +12,6 @@ const Authreducer = ( state , action ) => {
                 isFetching : false , 
                 error : false ,
             } ;
-        case "LOGIN_START" : 
-            return {
-                user : null , 
-                isFetching : true , 
-                error : false ,
-            } ;
         case "LOGIN_FAILURE" : 
             return {
                 user : null , 
@@ -37,9 +31,9 @@ const Authreducer = ( state , action ) => {
                 ...state , 
                 user : {
                     ...state.user ,
-                    followings : state.user.followings.filter((following)=>{
+                    followings : state.user.followings.filter((following)=>
                         following !== action.payload
-                    })
+                    )
                 }
             } ;
         default :

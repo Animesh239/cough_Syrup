@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import styles from "../styles/share.module.css";
 import profilePic from "../assets/blank-profile-picture.png";
-import { PermMedia, Label, Room, EmojiEmotions, Cancel } from "@material-ui/icons";
+import { PermMedia, Label, Room, EmojiEmotions, Cancel } from "@mui/icons-material";
 import { AuthContext } from '../context/AuthContext';
 import axios from '../utils/client.js';
 
