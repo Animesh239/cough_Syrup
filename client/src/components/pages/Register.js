@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../../styles/register.module.css";
 import { useRef } from 'react';
-import { useHistory } from "react-router"
+import { useNavigate } from 'react-router-dom';
 import axios from '../../utils/client.js';
 
 export default function Register() {
@@ -9,7 +9,7 @@ export default function Register() {
     const email = useRef();
     const password = useRef();
     const passwordAgain = useRef();
-    const history = useHistory()
+    const navigate = useNavigate()
 
     const handleClick = async (e) => {
         e.preventDefault();
@@ -23,7 +23,7 @@ export default function Register() {
             };
             try {
                 await axios.post("/auth/register", user);
-                history.push("/login");
+                navigate.push("/login");
             } catch (err) {
                 console.log(err);
             }
@@ -31,7 +31,7 @@ export default function Register() {
     };
 
     const handleLoginRedirect = (e) => {
-        history.push('/login')
+        navigate.push('/login')
     }
 
     return (

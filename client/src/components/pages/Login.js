@@ -2,17 +2,17 @@ import React from 'react';
 import styles from "../../styles/login.module.css";
 import { useRef } from 'react';
 import {loginCall} from "../../apiCalls"
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 
 export default function Login(){
     const email = useRef();
     const password = useRef();
-    const history = useHistory()
+    const navigate = useNavigate()
 
        
-    const {isFetching, error, dispatch} = useContext(AuthContext)
+    const {isFetching,  dispatch} = useContext(AuthContext)
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -25,7 +25,7 @@ export default function Login(){
     }
 
     const handleRegisterRedirect = (e) => {
-        history.push('/register')
+        navigate.push('/register')
       }
 
       return(
