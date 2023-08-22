@@ -23,7 +23,7 @@ export default function Register() {
             };
             try {
                 await axios.post("/auth/register", user);
-                navigate.push("/login");
+                navigate("/login");
             } catch (err) {
                 console.log(err);
             }
@@ -31,7 +31,7 @@ export default function Register() {
     };
 
     const handleLoginRedirect = (e) => {
-        navigate.push('/login')
+        navigate('/login')
     }
 
     return (

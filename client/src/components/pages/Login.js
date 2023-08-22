@@ -25,7 +25,7 @@ export default function Login(){
     }
 
     const handleRegisterRedirect = (e) => {
-        navigate.push('/register')
+        navigate('/register')
       }
 
       return(
